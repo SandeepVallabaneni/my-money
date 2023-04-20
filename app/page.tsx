@@ -4,26 +4,26 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 min-h-screen w-screen">
-      <main className="max-w-screen-2xl m-auto bg-white">
+    <main className="w-screen min-h-screen bg-blue-700">
+      <main className="m-auto bg-white max-w-screen-2xl">
         {/* NAVBAR */}
-        <nav className="bg-white p-2 flex justify-between">
-          <Link href="/" className="font-bold text-gray-700 text-2xl">
+        <nav className="flex justify-between p-2 bg-white">
+          <Link href="/" className="text-2xl font-bold text-gray-700">
             {" "}
             My Money{" "}
           </Link>
           <div>
             <div className="flex">
-              <button className="bg-red-400 text-white border p-1 px-4 rounded mr-3">
+              <button className="p-1 px-4 mr-3 text-white bg-red-400 border rounded">
                 Sign in
               </button>
-              <button className="border p-1 px-4 rounded">Sign up</button>
+              <button className="p-1 px-4 border rounded">Sign up</button>
             </div>
           </div>
         </nav>
         {/* NAVBAR */}
         <main>
-          <div className="h-screen flex flex-row flex-wrap">
+          <div className="flex flex-row flex-wrap h-screen">
             <button
               data-drawer-target="default-sidebar"
               data-drawer-toggle="default-sidebar"
